@@ -1,0 +1,1410 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hiranya Agro Tourism</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=|Roboto+Sans:400,700|Playfair+Display:400,700">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/fancybox.min.css">
+
+  <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header js-site-header">
+    <div class="container-fluid">
+      <div class="col-10 col-lg-4 site-logo" data-aos="fade">
+        <a href="index.html" class="d-flex align-items-center">
+          <img src="images/logo1.jpg" alt="Logo"
+            style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid #ccc; margin-right: 10px;">
+          <span class="site-text">Hiranya Agro Tourism</span>
+
+        </a>
+      </div>
+
+
+      <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- END menu-toggle -->
+
+      <div class="site-navbar js-site-navbar">
+        <nav role="navigation">
+          <div class="container">
+            <div class="row full-height align-items-center">
+              <div class="col-md-6 mx-auto">
+                <ul class="list-unstyled menu">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="rooms.html">Rooms</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="events.html">Events</a></li>
+                  <!-- <li><a href="contact.html">Contact</a></li> -->
+                  <li><a href="reservation.html">Reservation</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    </div>
+    </div>
+  </header>
+  <!-- END head -->
+
+  <!-- ------ -->
+
+  <!-- --------- -->
+  <section class="site-hero overlay" style="width: 100%; height: 100vh;" data-stellar-background-ratio="0.5">
+    <div class="video-background">
+      <video autoplay muted loop id="background-video">
+        <source src="/images/kalbhor farm.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="container">
+      <div class="row site-hero-inner justify-content-center align-items-center">
+        <div class="col-md-10 text-center" data-aos="fade-up">
+          <span class="custom-caption text-uppercase text-white d-block mb-3">
+            Welcome To Hiranya Agro Tourism
+          </span>
+          <h1 class="heading">Your Perfect Escape to Comfort and Joy</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .site-hero {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    #background-video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+  <!-- END section -->
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/+918830013373" class="whatsapp-float" target="_blank" style="
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     z-index: 1000;
+     background-color: rgb(27, 192, 88);
+     border-radius: 50%;
+     width: 60px;
+     height: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     text-decoration: none;
+     overflow: hidden;
+   ">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon"
+      style="width: 40px; height: 40px;" />
+  </a>
+
+
+
+
+
+
+
+  <section class="section bg-light pb-0">
+    <div class="container">
+      <div class="row check-availabilty" id="next">
+        <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
+          <form id="availabilityForm">
+            <div class="row">
+              <!-- Check In -->
+              <div class="col-md-2 mb-3 mb-lg-0">
+                <label for="checkin_date" class="font-weight-bold text-black">Check In</label>
+                <div class="field-icon-wrap">
+                  <div class="icon"><span class="icon-calendar"></span></div>
+                  <input type="text" id="checkin_date" name="checkin_date" class="form-control" required>
+                </div>
+              </div>
+              <!-- Check Out -->
+              <div class="col-md-2 mb-3 mb-lg-0">
+                <label for="checkout_date" class="font-weight-bold text-black">Check Out</label>
+                <div class="field-icon-wrap">
+                  <div class="icon"><span class="icon-calendar"></span></div>
+                  <input type="text" id="checkout_date" name="checkout_date" class="form-control" required>
+                </div>
+              </div>
+              <!-- Adults -->
+              <div class="col-md-2 mb-3 mb-lg-0">
+                <label for="adults" class="font-weight-bold text-black">Persons</label>
+                <div class="field-icon-wrap">
+                  <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                  <select name="adults" id="adults" class="form-control" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Phone Number -->
+              <div class="col-md-2 mb-3 mb-lg-0">
+                <label for="phone_number" class="font-weight-bold text-black">Phone</label>
+                <div class="field-icon-wrap">
+                  <div class="icon"><span class="icon-phone"></span></div>
+                  <input type="tel" id="phone_number" name="phone_number" class="form-control" required>
+                </div>
+              </div>
+              <!-- Email -->
+              <div class="col-md-2 mb-3 mb-lg-0">
+                <label for="email" class="font-weight-bold text-black">Email</label>
+                <div class="field-icon-wrap">
+                  <div class="icon"><span class="icon-phone"></span></div>
+                  <input type="email" id="email_id" name="email_id" class="form-control" required>
+                </div>
+              </div>
+              <!-- Button -->
+              <div class="col-md-2 col-lg-2 align-self-end">
+                <button type="submit" class="btn btn-primary btn-block text-white">Check Availability</button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Success Message -->
+          <div id="successMessage" style="display:none; color: green; margin-top: 10px;text-align:center;">
+            Your availability request has been sent successfully! We will reach out to you shortly.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
+  <script>
+    // Initialize EmailJS with your User ID
+    (function () {
+      emailjs.init("1UjIQJsSff6iVvtkH"); // Replace with your actual EmailJS user ID
+    })();
+
+    document.getElementById("availabilityForm").addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the form from submitting the default way
+
+      // Fetch form data
+      const formData = new FormData(this);
+
+      // Construct email content without name
+      const emailContent = {
+        phone_number: formData.get("phone_number"),
+        checkin_date: formData.get("checkin_date"),
+        checkout_date: formData.get("checkout_date"),
+        adults: formData.get("adults"),
+        email_id: formData.get("email_id")
+      };
+
+      // Send email using EmailJS
+      emailjs.send("service_2z5xeal", "template_5lxuwq7", emailContent)
+        .then(function (response) {
+          console.log("Email sent:", response);
+          // Show success message after sending the email
+          document.getElementById("successMessage").style.display = "block";
+          // Reset the form
+          document.getElementById("availabilityForm").reset();
+        }, function (error) {
+          console.error("Error sending email:", error);
+
+          alert("There was an error sending your request. Please try again later.");
+        });
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-12 col-lg-7 ml-auto order-lg-2 position-relative mb-5" data-aos="fade-up">
+        <figure class="img-absolute">
+          <img src="images/logo1.jpg" alt="Image" class="img-fluid">
+        </figure>
+        <img src="images/p2.jpg" alt="Image" class="img-fluid rounded">
+      </div>
+      <div class="col-md-12 col-lg-4 order-lg-1" data-aos="fade-up">
+        <h2 class="heading">Welcome!</h2>
+        <p class="mb-4" style="font-size: 1rem">
+          Experience the perfect blend of nature, adventure, and farm-fresh living at Hiranya Agro Tourism. Enjoy delicious meals, indoor and outdoor games, rain dance, karaoke nights, jungle treks, and stargazing. Relish pure Desi Gir cow dairy products, organic grains, and farm-to-table freshness. Whether it’s a peaceful escape or an adventurous getaway, Hiranya Agro Tourism offers unforgettable memories amidst nature's beauty.
+        </p>
+        <p>
+          <a href="https://www.youtube.com/@hiranyaagrotourism900" class="btn btn-primary text-white py-2 mr-3">YouTube</a> 
+          <span class="mr-3 font-family-serif"><em>or</em></span> 
+          <a href="images/v1.mp4" data-fancybox class="text-uppercase letter-spacing-1">See video</a>
+        </p>
+        
+      
+        <!-- Clickable Location Strip -->
+        <a href="https://www.google.com/maps/dir//6RCW%2B2FV,+Nasrapur,+Hatve+Khurd,+Maharashtra+412213/@18.2201071,73.7637846,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bc2f3002e2ef27b:0x2ea235dd8612fc00!2m2!1d73.8461863!2d18.2201247?entry=ttu&g_ep=EgoyMDI1MDIwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" 
+           style="display: block; width: 100%; background: #93cea1; color: white; text-align: center; 
+                  padding: 12px; margin-top: 10px; border-radius: 25px; font-weight: bold; 
+                  text-decoration: none; letter-spacing: 1px;">
+          📍 Open in Google Maps
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section" style="background-color: #ffffff; padding: 80px 0;">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-md-8">
+          <h2 class="heading" data-aos="fade-up"
+            style="font-size: 3rem; color: #000000; font-weight: 600; font-family: 'Playfair Display', times, serif;">
+            Camping Experiences</h2>
+          <p data-aos="fade-up" data-aos-delay="100" style="font-size: 1rem; color: #7f8c8d;">Escape the ordinary and
+            embark on an adventure with our exclusive camping packages. Whether you're seeking thrilling activities or
+            peaceful moments in nature, we’ve got a perfect stay for everyone. Book your escape now!</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Night Camping Package with A/C Octagonal Hut Stay -->
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <a href="#" class="room" style="text-decoration: none; color: inherit;">
+            <div class="img-wrap"
+              style="overflow: hidden; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); position: relative;">
+              <img src="images/IMG-20241229-WA0050.jpg" alt="Night Camping Package with A/C Octagonal Hut"
+                class="img-fluid mb-3"
+                style="transition: transform 0.3s ease-in-out; width: 100%; height: 300px; object-fit: cover;">
+              <div class="overlay"
+                style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); color: white; display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease-in-out; border-radius: 12px;">
+                <h4 style="font-size: 1.6rem; text-align: center;">Experience Ultimate Comfort & Adventure</h4>
+              </div>
+            </div>
+            <div class="p-4 text-center room-info"
+              style="background: #ffffff; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-size: 1.75rem; color: #34495e;">Night Camping with A/C Octagonal Hut</h3>
+              <span class="text-uppercase letter-spacing-1" style="color: #2980b9;">₹2,200 / per head</span>
+              <p>Check-in: 04:00 PM | Check-out: 10:30 AM (Next Day)</p>
+              <p><strong>Includes:</strong> Cozy Hut Stay, Meals & Thrilling Activities</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- 24 Hour Package with A/C Octagonal Hut Stay -->
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="#" class="room" style="text-decoration: none; color: inherit;">
+            <div class="img-wrap"
+              style="overflow: hidden; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); position: relative;">
+              <img src="images/p3.jpg" alt="24 Hour Package with A/C Octagonal Hut" class="img-fluid mb-3"
+                style="transition: transform 0.3s ease-in-out; width: 100%; height: 300px; object-fit: cover;">
+              <div class="overlay"
+                style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); color: white; display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease-in-out; border-radius: 12px;">
+                <h4 style="font-size: 1.6rem; text-align: center;">A Perfect Blend of Adventure & Comfort</h4>
+              </div>
+            </div>
+            <div class="p-4 text-center room-info"
+              style="background: #ffffff; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-size: 1.75rem; color: #34495e;">24 Hour Package with A/C Octagonal Hut</h3>
+              <span class="text-uppercase letter-spacing-1" style="color: #2980b9;">₹2,700 / per head</span>
+              <p>Check-in: 12:00 PM | Check-out: 11:00 AM (Next Day)</p>
+              <p><strong>Includes:</strong> All Meals, Activities & Exclusive Hut Stay</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- 24 Hour Package with 360 Degree Mountain View Common Hall -->
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <a href="#" class="room" style="text-decoration: none; color: inherit;">
+            <div class="img-wrap"
+              style="overflow: hidden; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); position: relative;">
+              <img src="images/p5.jpg" alt="24 Hour Package with 360 Degree Mountain View Common Hall"
+                class="img-fluid mb-3"
+                style="transition: transform 0.3s ease-in-out; width: 100%; height: 300px; object-fit: cover;">
+              <div class="overlay"
+                style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); color: white; display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease-in-out; border-radius: 12px;">
+                <h4 style="font-size: 1.6rem; text-align: center;">Breathe in Fresh Mountain Air</h4>
+              </div>
+            </div>
+            <div class="p-4 text-center room-info"
+              style="background: #ffffff; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);">
+              <h3 style="font-size: 1.75rem; color: #34495e;">24 Hour Package for Day Outing </h3>
+              <span class="text-uppercase letter-spacing-1" style="color: #2980b9;">₹1,200/- / per head</span>
+              <p>Check-in: 9:00 PM | Check-out: 6:00 AM (Next Day)</p>
+              <p><strong>Includes:</strong> Stunning 360° Mountain View, Common Hall</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Day Outing Package with 360 Degree Mountain View Common Hall
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+            <a href="#" class="room" style="text-decoration: none; color: inherit;">
+              <div class="img-wrap" style="overflow: hidden; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); position: relative;">
+                <img src="images/p4.jpg" alt="Day Outing Package with Mountain View" class="img-fluid mb-3" style="transition: transform 0.3s ease-in-out; width: 100%; height: 300px; object-fit: cover;">
+                <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); color: white; display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease-in-out; border-radius: 12px;">
+                  <h4 style="font-size: 1.6rem; text-align: center;">A Day to Remember in Nature’s Lap</h4>
+                </div>
+              </div>
+              <div class="p-4 text-center room-info" style="background: #ffffff; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);">
+                <h3 style="font-size: 1.75rem; color: #34495e;">Day Outing with 360° Mountain View</h3>
+                <span class="text-uppercase letter-spacing-1" style="color: #2980b9;">₹1199 / per head</span>
+                <p>Check-in: 09:30 AM | Check-out: 05:00 PM</p>
+                <p><strong>Includes:</strong> Refreshing Mountain Views & Common Hall Access</p>
+              </div>
+            </a>
+          </div> -->
+      </div>
+    </div>
+  </section>
+
+
+  <style>
+    .img-wrap:hover img {
+      transform: scale(1.05);
+    }
+
+    .img-wrap:hover figcaption {
+      opacity: 1;
+    }
+  </style>
+
+
+  </section>
+
+
+  <section class="section slider-section bg-light py-5" style="background-color: #f8f9fa; padding: 60px 0;">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-md-8">
+          <h2 class="heading" data-aos="fade-up"
+            style="font-size: 3rem; color: #000000; font-weight: bold; text-transform: uppercase; font-family: 'Playfair Display', times, serif;">
+            Photos</h2>
+          <p class="lead" data-aos="fade-up" data-aos-delay="100">
+            A world full of beauty, waiting to be explored. Here’s a sneak peek into the serene and breathtaking views
+            captured in our travels.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-container"
+        style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; padding: 20px 0;">
+        <div class="grid-item"
+          style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <a href="images/slider-1.jpg" data-fancybox="images" data-caption="A scenic view of the majestic mountains">
+            <img src="images/p4.jpg" alt="Scenic view of mountains" class="img-fluid"
+              style="width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;">
+          </a>
+        </div>
+        <div class="grid-item"
+          style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <a href="images/slider-2.jpg" data-fancybox="images" data-caption="Golden sunset at the beach">
+            <img src="images/p6.jpg" alt="Golden sunset at the beach" class="img-fluid"
+              style="width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;">
+          </a>
+        </div>
+        <div class="grid-item"
+          style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <a href="images/slider-3.jpg" data-fancybox="images" data-caption="Close-up of a dense green forest">
+            <img src="images/p10.jpg" alt="Dense green forest" class="img-fluid"
+              style="width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;">
+          </a>
+        </div>
+        <div class="grid-item"
+          style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <a href="images/slider-4.jpg" data-fancybox="images" data-caption="Snow-covered peaks in the distance">
+            <img src="images/p12.jpg" alt="Snow-covered peaks" class="img-fluid"
+              style="width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;">
+          </a>
+        </div>
+        <div class="grid-item"
+          style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <a href="images/slider-5.jpg" data-fancybox="images" data-caption="Lush green hills under a bright sky">
+            <img src="images/p8.jpg" alt="Lush green hills" class="img-fluid"
+              style="width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;">
+          </a>
+        </div>
+        <div class="grid-item"
+          style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <a href="images/slider-7.jpg" data-fancybox="images" data-caption="A tranquil lake surrounded by trees">
+            <img src="images/p11.jpg" alt="Tranquil lake" class="img-fluid"
+              style="width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- END section -->
+
+
+
+  <section class="section bg-image overlay" style="background-image: url('images/mexican-food.jpg');">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-md-7">
+          <h2 class="heading text-white" data-aos="fade">Our Menu</h2>
+          <p class="text-white" data-aos="fade" data-aos-delay="100">Where Every Meal is a Fresh Experience <br> Taste
+            the Difference!</p>
+        </div>
+      </div>
+      <div class="food-menu-tabs" data-aos="fade">
+        <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active letter-spacing-2" id="mains-tab" data-toggle="tab" href="#mains" role="tab"
+              aria-controls="mains" aria-selected="true">Veg Starters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letter-spacing-2" id="desserts-tab" data-toggle="tab" href="#desserts" role="tab"
+              aria-controls="desserts" aria-selected="false">Non-Veg Starters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letter-spacing-2" id="drinks-tab" data-toggle="tab" href="#drinks" role="tab"
+              aria-controls="drinks" aria-selected="false">Breakfast</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letter-spacing-2" id="Veg-Curries" data-toggle="tab" href="#Veg-Currie" role="tab"
+              aria-controls="drinks" aria-selected="false">Veg Curries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letter-spacing-2" id="Sweets-tab" data-toggle="tab" href="#Sweets" role="tab"
+              aria-controls="drinks" aria-selected="false">Sweets</a>
+          </li>
+        </ul>
+        <div class="tab-content py-5" id="myTabContent">
+
+
+          <div class="tab-pane fade show active text-left" id="mains" role="tabpanel" aria-labelledby="mains-tab">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white"><a href="#" class="text-white">Chana Garlic Fried</a></h3>
+                  <p class="text-white text-opacity-7">A savory and crunchy snack, perfectly spiced and crispy.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white"><a href="#" class="text-white">Peanuts – Salted/Boiled</a></h3>
+                  <p class="text-white text-opacity-7">Enjoy the classic taste of salted or boiled peanuts, a perfect
+                    snack.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white"><a href="#" class="text-white">Masala Papad – Roasted/Fried</a></h3>
+                  <p class="text-white text-opacity-7">Crispy papads with flavorful spices, available roasted or fried.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white"><a href="#" class="text-white">Soybean Masala</a></h3>
+                  <p class="text-white text-opacity-7">A spicy and nutritious dish made with soybeans and rich Indian
+                    spices.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white"><a href="#" class="text-white">Pakodas – Onion/Potato/Sweet Corn/Paneer</a>
+                  </h3>
+                  <p class="text-white text-opacity-7">Crispy fritters made from a variety of ingredients like onion,
+                    potato, and paneer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="tab-pane fade text-left" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="d-block text-primary h4 mb-"><a href="#" class="text-white">Aallni Rassa</a></h3>
+                  <p class="text-white text-opacity-7">A simple and flavorful bowl of plain gravy, perfect as a side
+                    dish.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white"><a href="#" class="text-white">Boiled Eggs</a></h3>
+                  <p class="text-white text-opacity-7">Classic boiled eggs, perfect as a snack or side dish.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white"><a href="#" class="text-white">Half-Fried Eggs</a></h3>
+                  <p class="text-white text-opacity-7">Eggs fried to perfection with the yolk still soft.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white"><a href="#" class="text-white">Egg Omelette</a></h3>
+                  <p class="text-white text-opacity-7">A fluffy and savory omelette, made with fresh eggs and spices.
+                  </p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white"><a href="#" class="text-white">Chicken Sukka (Dry Chicken)</a></h3>
+                  <p class="text-white text-opacity-7">A dry, spicy chicken dish with a burst of flavors.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white"><a href="#" class="text-white">Chicken 65</a></h3>
+                  <p class="text-white text-opacity-7">Crispy, deep-fried chicken, packed with spices and tangy flavors.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white"><a href="#" class="text-white">Chicken Chilli</a></h3>
+                  <p class="text-white text-opacity-7">A spicy and flavorful chicken dish cooked with chilies and Indian
+                    spices.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white"><a href="#" class="text-white">Chicken Barbeque </a></h3>
+                  <p class="text-white text-opacity-7">Tender chicken marinated and grilled to perfection with barbecue
+                    sauce.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white"><a href="#" class="text-white">Mutton Sukka (Dry Mutton)</a></h3>
+                  <p class="text-white text-opacity-7">Spicy and tender mutton cooked dry with Indian spices for a
+                    flavorful experience.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .tab-pane -->
+          <div class="tab-pane fade text-left" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Poha</h3>
+                  <p class="text-white text-opacity-7">A delicious and healthy breakfast dish made with flattened rice,
+                    vegetables, and spices.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Upma/Sheera</h3>
+                  <p class="text-white text-opacity-7">A delicious and healthy breakfast dish made with flattened rice,
+                    vegetables, and spices.</p>                
+                  </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Misal Pav</h3>
+                  <p class="text-white text-opacity-7">A spicy curry served with pav (bread), topped with crunchy farsan
+                    and onions.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Single Egg Omelette</h3>
+                  <p class="text-white text-opacity-7">A fluffy omelette made with one egg and your choice of veggies
+                    and spices.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Double Egg Omelette</h3>
+                  <p class="text-white text-opacity-7">A hearty omelette made with two eggs, filled with your choice of
+                    veggies and spices.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Single Egg Bhurji</h3>
+                  <p class="text-white text-opacity-7">Scrambled eggs cooked with spices, vegetables, and herbs, served
+                    with bread.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Double Egg Bhurji</h3>
+                  <p class="text-white text-opacity-7">A flavorful scrambled egg dish made with two eggs and seasoned
+                    with spices and veggies.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Idli with Sambar and Chutney</h3>
+                  <p class="text-white text-opacity-7">Steamed rice cakes served with spicy sambar and coconut chutney.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Medu Vada with Sambar and Chutney</h3>
+                  <p class="text-white text-opacity-7">Crispy and soft lentil doughnuts served with sambar and chutney.
+                  </p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Batata Vada with Sambar and Chutney</h3>
+                  <p class="text-white text-opacity-7">Spicy mashed potato fritters served with sambar and chutney.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Thalipeeth</h3>
+                  <p class="text-white text-opacity-7">Served with
+                    chutney.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .tab-pane -->
+          <div class="tab-pane fade text-left" id="Veg-Currie" role="tabpanel" aria-labelledby="drinks-tab">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Masala Matki</h3>
+                  <p class="text-white text-opacity-7">A spicy dish made with sprouted moth beans, cooked with a blend
+                    of spices.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Masala Moong</h3>
+                  <p class="text-white text-opacity-7">Green gram cooked in a flavorful spice mix, perfect for a light
+                    yet satisfying meal.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Matki Rassa</h3>
+                  <p class="text-white text-opacity-7">A spicy gravy dish made with sprouted matki, perfect with chapati
+                    or rice.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Moong Rassa</h3>
+                  <p class="text-white text-opacity-7">A flavorful gravy made with green moong, spiced to perfection.
+                  </p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Shravan Beans</h3>
+                  <p class="text-white text-opacity-7">Delicious beans cooked with spices, ideal for any meal.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Sukki Gawar Masala </h3>
+                  <p class="text-white text-opacity-7">A dry, spiced dish made with cluster beans, an Indian favorite.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Bharleli Bhindi </h3>
+                  <p class="text-white text-opacity-7">Okra stuffed with a delicious spice mix and cooked to perfection.
+                  </p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Masoor Dal Dry/Gravy</h3>
+                  <p class="text-white text-opacity-7">A healthy and tasty dish made with masoor dal, available in dry
+                    or gravy form.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Rajma and Beans</h3>
+                  <p class="text-white text-opacity-7">A hearty dish made with kidney beans and a variety of beans,
+                    spiced and cooked to perfection.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Vangi-Batata Baji </h3>
+                  <p class="text-white text-opacity-7">A flavorful gravy made with potatoes and vanga, perfect with rice
+                    or bread.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Potato-Peas Masala/Gravy</h3>
+                  <p class="text-white text-opacity-7">A delicious combination of potatoes and peas, cooked with
+                    aromatic spices.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Vanga Masala</h3>
+                  <p class="text-white text-opacity-7">A spicy eggplant dish cooked with a mix of spices and herbs.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Mix Vegetable Curry</h3>
+                  <p class="text-white text-opacity-7">A hearty mix of vegetables cooked in a flavorful curry sauce.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Sev Tomato Curry</h3>
+                  <p class="text-white text-opacity-7">A tangy tomato-based curry, served with sev (crunchy chickpea
+                    noodles).</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Soybean Gravy/Masala</h3>
+                  <p class="text-white text-opacity-7">Soybeans cooked in a rich gravy with aromatic spices, a
+                    vegetarian delight.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Pavta (Broad Beans) – Gravy/Masala</h3>
+                  <p class="text-white text-opacity-7">Broad beans cooked in either a gravy or dry masala, served with
+                    rice or bread.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Paneer – Masala/Matar Paneer</h3>
+                  <p class="text-white text-opacity-7">Paneer cooked in a rich masala or with peas for a flavorful
+                    curry.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .tab-pane -->
+          <div class="tab-pane fade text-left" id="Sweets" role="tabpanel" aria-labelledby="Sweets-tab">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Kheer</h3>
+                  <p class="text-white text-opacity-7">A delicious sweet dish made with vermicelli, milk, and cardamom,
+                    garnished with nuts and dry fruits.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Gajar Halwa (Carrot Dessert)</h3>
+                  <p class="text-white text-opacity-7">Grated carrots slow-cooked with milk, sugar, and ghee, topped
+                    with dry fruits.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Moong Halwa</h3>
+                  <p class="text-white text-opacity-7">A rich dessert made from moong dal, sugar, and ghee, offering a
+                    delightful taste.</p>
+                </div>
+                <div class="food-menu mb-5">
+                  <h3 class="text-white">Gulab Jamun</h3>
+                  <p class="text-white text-opacity-7">Soft, deep-fried dough balls soaked in sugar syrup.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- END section -->
+  <section class="section testimonial-section">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-md-7">
+          <h2 class="heading" data-aos="fade-up">People Says</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="js-carousel-2 owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200" id="testimonial-slider">
+          <!-- Testimonials will be injected here by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>const reviews = [
+      {
+        author_name: "Nilesh Deshmukh",
+        author_url: "https://www.google.com/maps/contrib/100716741822759264052/reviews",
+        profile_photo_url: "https://lh3.googleusercontent.com/a-/ALV-UjUdNhPhf2P6Zw4i1geQt537V1-L4Wy5494JxoNeBTfbBiKW-8jh=s128-c0x00000000-cc-rp-mo-ba5",
+        rating: 5,
+        relative_time_description: "a month ago",
+        text: "Beautiful place for outing for family and groups!! Food was excellent. Neat and clean rooms..service was good too. This place got beautiful views of mountains... Recommended for stay.. You can have great time with family and friends playing on lawn and at bonfire."
+      },
+      {
+        author_name: "TrekBook India",
+        author_url: "https://www.google.com/maps/contrib/104269809533149012170/reviews",
+        profile_photo_url: "https://lh3.googleusercontent.com/a-/ALV-UjUws6xIppoDLfGpa0k243dw20eI36jOcN_opuN7F5V4pKkrQfag=s128-c0x00000000-cc-rp-mo-ba7",
+        rating: 5,
+        relative_time_description: "2 months ago",
+        text: "For a detailed review, check out my video on YouTube Channel ShowMyStay. I recently visited Hiranya Agro Tourism and stayed overnight with my wife, and it was an amazing experience! This serene resort is nestled on a hilltop, offering stunning valley views and complete tranquility. The food was delicious, simple, and authentically Maharashtrian, making each meal a treat. Highly recommend this peaceful retreat for anyone looking to unwind in nature."
+      },
+      {
+        author_name: "Pallavi Walhekar",
+        author_url: "https://www.google.com/maps/contrib/115413491365029563361/reviews",
+        profile_photo_url: "https://lh3.googleusercontent.com/a/ACg8ocLpk9_W4Co3zDDv8TKY5F_fDgnAk0Phh3VEdB9FCJcT27nKcQ=s128-c0x00000000-cc-rp-mo",
+        rating: 4,
+        relative_time_description: "2 weeks ago",
+        text: "The place is perfect to spend holidays👌🏻I enjoyed alot with my friends 🤩"
+      },
+      {
+        author_name: "Ritu Walhekar",
+        author_url: "https://www.google.com/maps/contrib/115700484988694691248/reviews",
+        profile_photo_url: "https://lh3.googleusercontent.com/a/ACg8ocI1lOPnrtb0RDTrc4WFcG4bwiVj6skRASSbYcgO3kZ_xOCarg=s128-c0x00000000-cc-rp-mo",
+        rating: 4,
+        relative_time_description: "2 weeks ago",
+        text: "We enjoyed very much. The place is awesome 💯 👍"
+      },
+      {
+        author_name: "Mahesh Kasar",
+        author_url: "https://www.google.com/maps/contrib/103918707174046613956/reviews",
+        profile_photo_url: "https://lh3.googleusercontent.com/a-/ALV-UjVxdgkq2pzKBG9EnnR5yFLUbYxNig4eSqKqfPpBf4ASiAHSYcRZ=s128-c0x00000000-cc-rp-mo",
+        rating: 1,
+        relative_time_description: "11 months ago",
+        text: "Strongly not recommended, for booking they are promising to give anything, but once you paid, they change their behavior. You have to ask more time and wait for a long time."
+      }
+    ];
+
+    // Get the container for the slider
+    const sliderContainer = document.getElementById('testimonial-slider');
+
+    // Function to create testimonial HTML
+    const createTestimonial = (review) => {
+      const testimonialElement = document.createElement('div');
+      testimonialElement.classList.add('testimonial', 'text-center', 'slider-item');
+
+      const imageElement = document.createElement('div');
+      imageElement.classList.add('author-image', 'mb-3');
+      const image = document.createElement('img');
+      image.src = review.profile_photo_url;
+      image.alt = "Image placeholder";
+      image.classList.add('rounded-circle', 'mx-auto');
+      imageElement.appendChild(image);
+
+      const blockquoteElement = document.createElement('blockquote');
+      const p = document.createElement('p');
+      p.innerHTML = `&ldquo;${review.text}&rdquo;`;
+      blockquoteElement.appendChild(p);
+
+      const authorElement = document.createElement('p');
+      authorElement.innerHTML = `<em>&mdash; <a href="${review.author_url}" target="_blank">${review.author_name}</a> (${review.rating} Stars) <br><small>${review.relative_time_description}</small></em>`;
+
+      // Append all elements to the testimonial element
+      testimonialElement.appendChild(imageElement);
+      testimonialElement.appendChild(blockquoteElement);
+      testimonialElement.appendChild(authorElement);
+
+      return testimonialElement;
+    };
+
+    // Loop through the reviews and append to the slider
+    reviews.forEach(review => {
+      const testimonialElement = createTestimonial(review);
+      sliderContainer.appendChild(testimonialElement);
+    });
+  </script>
+
+
+
+  <section class="section blog-post-entry bg-light">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-md-7">
+          <h2 class="heading" data-aos="fade-up">Events</h2>
+          <p data-aos="fade-up">Join us for a range of exciting events that will make your experience unforgettable.
+            From engaging outdoor activities to relaxing indoor options, there's something for everyone!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
+          <div class="media media-custom d-block mb-4 h-100">
+            <a href="#" class="mb-4 d-block"><img src="images/N1.jpg" alt="Image placeholder" class="img-fluid"></a>
+            <div class="media-body">
+              <span class="meta-post">Bonfire</span>
+              <h2 class="mt-0 mb-3"><a href="#">Bonfire (On Request)</a></h2>
+              <p>Experience the warmth and ambiance of a cozy bonfire under the stars, perfect for evenings with friends
+                and family. Available upon request.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="200">
+          <div class="media media-custom d-block mb-4 h-100">
+            <a href="#" class="mb-4 d-block"><img src="images/N3.jpg" alt="Image placeholder" class="img-fluid"></a>
+            <div class="media-body">
+              <span class="meta-post">Games</span>
+              <h2 class="mt-0 mb-3"><a href="#">Indoor/Outdoor Games</a></h2>
+              <p>Engage in a range of fun-filled activities, both indoors and outdoors, suitable for all ages. From
+                board games to sports, there's something for everyone to enjoy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="300">
+          <div class="media media-custom d-block mb-4 h-100">
+            <a href="#" class="mb-4 d-block"><img src="images/N2.jpg" alt="Image placeholder" class="img-fluid"></a>
+            <div class="media-body">
+              <span class="meta-post">Entertainment</span>
+              <h2 class="mt-0 mb-3"><a href="#">Karaoke & Rain Dance</a></h2>
+              <p>Unleash your inner singer with a fun karaoke session and enjoy the splashy fun of a rain dance. Perfect
+                for adding excitement to your day.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="400">
+          <div class="media media-custom d-block mb-4 h-100">
+            <a href="#" class="mb-4 d-block"><img src="images/N4.jpg" alt="Image placeholder" class="img-fluid"></a>
+            <div class="media-body">
+              <span class="meta-post">Adventure</span>
+              <h2 class="mt-0 mb-3"><a href="#">Jungle Trek</a></h2>
+              <p>Embark on an exciting jungle trek and explore the beauty of nature. Walk through lush green forests,
+                enjoy scenic views, and experience the wildlife up close.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="500">
+          <div class="media media-custom d-block mb-4 h-100">
+            <a href="#" class="mb-4 d-block"><img src="images/N5.jpg" alt="Image placeholder" class="img-fluid"></a>
+            <div class="media-body">
+              <span class="meta-post">Nature</span>
+              <h2 class="mt-0 mb-3"><a href="#">Bird Watching & Photography</a></h2>
+              <p>Enjoy the serenity of nature by observing various species of birds and capturing the beauty of the
+                surroundings with a photography session.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="600">
+          <div class="media media-custom d-block mb-4 h-100">
+            <a href="#" class="mb-4 d-block"><img src="images/N6.jpg" alt="Image placeholder" class="img-fluid"></a>
+            <div class="media-body">
+              <span class="meta-post">Relaxation</span>
+              <h2 class="mt-0 mb-3"><a href="#">Stargazing & Bullock Cart Ride</a></h2>
+              <p>Experience the peaceful tranquility of stargazing under the night sky, or enjoy a traditional bullock
+                cart ride through scenic landscapes (on request).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; background-color: #f9f9f9; margin-bottom: 40px;">
+
+    <!-- Product Heading -->
+    <h2 class="heading" data-aos="fade-up"
+      style="font-family:'Playfair Display', times, serif; font-size: 40px; color: #000000; text-align: center; width: 100%; margin-top: 30px; margin-bottom: 20px;">
+      Pure & Organic Products
+    </h2>
+  
+    <!-- First Product Card -->
+    <div style="width: 300px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); overflow: hidden; background-color: white; transition: transform 0.3s ease;">
+      <img src="/images/WhatsApp Image 2025-01-09 at 20.01.10_217080ff.jpg" alt="Rice Milk Poster 1"
+        style="width: 100%; height: auto; border-bottom: 1px solid #e0e0e0;">
+    </div>
+  
+    <!-- Second Product Card -->
+    <div style="width: 300px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); overflow: hidden; background-color: white; transition: transform 0.3s ease;">
+      <img src="/images/Black Minimalist Rice Bowl Menu .jpg" alt="Rice Milk Poster 2"
+        style="width: 100%; height: auto; border-bottom: 1px solid #e0e0e0;">
+    </div>
+  
+    <!-- WhatsApp Order Statement -->
+    <p style="width: 100%; text-align: center; font-size: 18px; margin-top: 10px; color: #333;">
+      You can place your order via WhatsApp.
+    </p>
+  
+    <!-- WhatsApp Order Button -->
+    <a href="https://wa.me/+918830013373" target="_blank" 
+       style="display: inline-block; padding: 12px 24px; font-size: 18px; color: white; background-color: #25D366; 
+              text-align: center; border-radius: 25px; text-decoration: none; font-weight: bold; transition: 0.3s;">
+      📲 Order on WhatsApp
+    </a>
+  
+  </section>
+  
+
+  <!-- Add the link to load the 'Philosopher' font -->
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+
+
+
+  <section class="feedback-section">
+
+    <form id="feedback-form">
+
+
+
+      <div class="feedback-box">
+        <h2 style="font-family: 'Philospher '">How Would You Rate Us?</h2>
+
+        <div class="stars" data-product-id="1">
+          <i class="fa-solid fa-star" data-rating="1"></i>
+          <i class="fa-solid fa-star" data-rating="2"></i>
+          <i class="fa-solid fa-star" data-rating="3"></i>
+          <i class="fa-solid fa-star" data-rating="4"></i>
+          <i class="fa-solid fa-star" data-rating="5"></i>
+        </div>
+
+        <input type="text" id="name" name='name' placeholder="Your Name" required>
+        <input type="text" id="contact" name="contact" placeholder="Your Contact Number" required>
+        <textarea id="comment" name="comment" rows="4" placeholder="Your Comment"></textarea>
+
+        <button id="submit-button">Submit Feedback</button>
+
+        <div id="message"></div>
+      </div>
+    </form>
+  </section>
+
+  <script>
+    const stars = document.querySelectorAll('.stars i');
+    let selectedRating = 0;
+
+    // Handle star rating click
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        selectedRating = star.getAttribute('data-rating');
+        stars.forEach(s => s.style.color = s.getAttribute('data-rating') <= selectedRating ? 'gold' : 'gray');
+      });
+    });
+
+    // Handle the form submission
+    document.querySelector('#feedback-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      console.log('hi');
+
+      const name = document.getElementById('name').value;
+      const contact = document.getElementById('contact').value;
+      const comment = document.getElementById('comment').value;
+      const submitButton = document.querySelector('#submit-button'); // Assuming your submit button has an id "submit-button"
+      const formElements = document.querySelectorAll('#feedback-form input, #feedback-form textarea'); // Select form inputs
+
+      if (!name || !contact || !selectedRating || !comment) {
+        document.getElementById('message').innerText = 'Please fill all fields and select a rating.';
+        return;
+      }
+
+      const feedbackData = { name, contact, rating: selectedRating, comment };
+      // Prepare form data
+      const formData = new URLSearchParams({
+        "name": name,
+        "contact": contact,
+        "rating": selectedRating,
+        "comment": comment,
+      });
+
+      try {
+        // Disable the form elements and submit button
+        submitButton.disabled = true;
+        formElements.forEach(element => element.disabled = true);
+        document.getElementById('message').innerText = 'Submitting your feedback...';
+
+        const response = await fetch('https://script.google.com/macros/s/AKfycbxXBKB4CmjlX78Xz1rJd6hMaPKZh9fFpjZe8Qt-4x3Nzj5UKMYjnZ5uTt8Nd83YePES/exec', {
+          method: 'POST',
+          body: formData,
+        });
+
+        if (response.ok) {
+          document.getElementById('message').innerText = 'Feedback submitted successfully!';
+          document.getElementById('name').value = '';
+          document.getElementById('contact').value = '';
+          document.getElementById('comment').value = '';
+          stars.forEach(star => (star.style.color = 'gray'));
+          selectedRating = 0;
+        } else {
+          const result = await response.json();
+          document.getElementById('message').innerText = result.message || 'Error submitting feedback. Please try again.';
+        }
+      } catch (error) {
+        document.getElementById('message').innerText = 'Error submitting feedback. Please try again.';
+      } finally {
+        // Re-enable the form elements and submit button
+        submitButton.disabled = false;
+        formElements.forEach(element => element.disabled = false);
+      }
+    });
+
+  </script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- Feedback Section CSS -->
+  <style>
+    .feedback-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 20px;
+    }
+
+    .feedback-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .feedback-box h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .stars {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .stars i {
+      font-size: 30px;
+      color: #ddd;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .stars i.checked {
+      color: #ffab00;
+    }
+
+    .feedback-box input[type="text"],
+    .feedback-box textarea {
+      width: calc(100% - 20px);
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    .feedback-box input[type="text"]:focus,
+    .feedback-box textarea:focus {
+      border-color: #4CAF50;
+      outline: none;
+    }
+
+    .feedback-box textarea {
+      resize: none;
+    }
+
+    .feedback-box button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      width: 100%;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .feedback-box button:hover {
+      background-color: #45a049;
+      transform: translateY(-2px);
+    }
+
+    .feedback-box button:active {
+      transform: translateY(0);
+    }
+
+    .feedback-box #message {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #4CAF50;
+      font-weight: 500;
+    }
+  </style>
+
+
+
+
+  <section class="section bg-image overlay" style="background-image: url('images/pg4.jpg');">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 text-center mb-4 mb-md-0 text-md-left" data-aos="fade-up">
+          <h2 class="text-white font-weight-bold">A Best Place To Stay. Reserve Now!</h2>
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-right" data-aos="fade-up" data-aos-delay="200">
+          <a href="reservation.html" class="btn btn-outline-white-primary py-3 text-white px-5">Reserve Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section footer-section">
+    <div class="container">
+      <div class="row mb-4">
+        <!-- About Us, Terms, and Privacy -->
+        <div class="col-md-3 mb-5 text-center text-md-left">
+          <ul class="list-unstyled link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display: inline; white-space: nowrap;">Developed By : Rohan Thite</li>
+            <li><a href="https://ronythite007.github.io/rohanthite.github.io/" target="_blank">Click me</a></li>
+          </ul>
+        </div>
+        <!-- The Rooms & Suites, Contact Us, Restaurant -->
+        <div class="col-md-3 mb-5 text-center text-md-left">
+          <ul class="list-unstyled link">
+            <li>Explore</li>
+            <li>Dining Experience</li>
+            <li>Facilities</li>
+            <li>Resort Specifications</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <!-- Contact Information -->
+        <div class="col-md-3 mb-5 pr-md-5 contact-info text-center text-md-left">
+          <p>
+            <span class="d-block">
+              <span class="ion-ios-location h5 mr-3 text-primary"></span>Address:
+            </span>
+            <span>
+              <a href="https://maps.google.com/?q=Nasrapur, Hatve Bk, Maharashtra 412213" target="_blank"
+                style="text-decoration: none; color: inherit; transition: color 0.3s;">
+                Nasrapur, Hatve Bk <br> Maharashtra 412213
+              </a>
+            </span>
+          </p>
+          <p>
+            <span class="d-block">
+              <span class="ion-ios-telephone h5 mr-3 text-primary"></span>Phone:
+            </span>
+            <span>
+              <a href="tel:+918830013373" style="text-decoration: none; color: inherit; transition: color 0.3s;">
+                +91 88300 13373
+              </a>
+            </span>
+          </p>
+          <p>
+            <span class="d-block">
+              <span class="ion-ios-email h5 mr-3 text-primary"></span>Email:
+            </span>
+            <span>
+              <a href="mailto:hat.tourism@gmail.com"
+                style="text-decoration: none; color: inherit; transition: color 0.3s;">
+                hat.tourism@gmail.com
+              </a>
+            </span>
+          </p>
+        </div>
+        <!-- Newsletter Signup -->
+        <div class="col-md-3 mb-5 text-center text-md-left">
+          <p>Sign up for our newsletter</p>
+          <form action="#" class="footer-newsletter">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email...">
+              <button type="submit" class="btn"><span class="fa fa-paper-plane"></span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <p class="col-md-6 text-center text-md-left">
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script> All rights reserved <i class="icon-heart-o"
+            aria-hidden="true"></i> by Hiranya Agro Tourism
+        </p>
+
+        <head>
+          <!-- Add this to your <head> section -->
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        </head>
+
+        <body>
+          <p class="col-md-6 text-center text-md-right social">
+            <a href="https://www.facebook.com/p/HIRANYA-AGRO-TOURISM-100084701057252/" target="_blank">
+              <span class="fab fa-facebook"></span>
+            </a>
+            <a href="https://www.instagram.com/hiranyaagrotourism/" target="_blank">
+              <span class="fab fa-instagram"></span>
+            </a>
+            <a href="#" target="_blank">
+              <span class="fab fa-twitter"></span>
+            </a>
+
+            <!-- YouTube Icon Added -->
+            <a href="https://www.youtube.com/@hiranyaagrotourism900" target="_blank">
+              <span class="fab fa-youtube"></span>
+            </a>
+          </p>
+        </body>
+
+
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* Mobile View Adjustments */
+    @media (max-width: 768px) {
+
+      .contact-info,
+      .footer-newsletter,
+      .link {
+        text-align: center;
+      }
+
+      .footer-newsletter input {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .footer-newsletter button {
+        margin-top: 10px;
+      }
+
+      .social a {
+        font-size: 20px;
+        margin: 0 10px;
+      }
+    }
+  </style>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+
+
+  <script src="js/aos.js"></script>
+
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
